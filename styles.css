@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  background: #333333;
+}
+
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  width: max-content;
+  margin: 48px auto;
+}
+
+.tile {
+  height: 100px;
+  width: 100px;
+  border: 5px solid #444444;
+  background: #111111;
+  cursor: pointer;
+}
